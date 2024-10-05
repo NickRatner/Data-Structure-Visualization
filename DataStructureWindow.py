@@ -1,5 +1,6 @@
 import PySimpleGUI as sg
 import BSTWindow as bstw
+import LinkedListWindow as llw
 import StackWindow as sw
 import QueueWindow as qw
 
@@ -11,6 +12,7 @@ class DataStructureWindow:
         layout = [
                     [sg.Text("Pick Data Structure")],
                     [sg.Button("Binary Search Tree")],
+                    [sg.Button("Linked List")],
                     [sg.Button("Stack")],
                     [sg.Button("Queue")],
                     [sg.Button("Exit")]
@@ -25,6 +27,8 @@ class DataStructureWindow:
                 break
             if event == "Binary Search Tree":
                 self.openBSTWindow()
+            if event == "Linked List":
+                self.openLinkedListWindow()
             if event == "Stack":
                 self.openStackWindow()
             if event == "Queue":
@@ -34,6 +38,9 @@ class DataStructureWindow:
 
     def openBSTWindow(self):
         myBSTWindow = bstw.BSTWindow()
+
+    def openLinkedListWindow(self):
+        myLinkedListWindow = llw.LinkedListWindow()
 
     def openStackWindow(self):
         myStackWindow = sw.StackWindow()
