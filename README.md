@@ -13,7 +13,8 @@ Binary Search Tree:
 
 Linked List:
 
-![image](https://github.com/user-attachments/assets/20e88516-eddf-4f04-a405-ebe4b4155234)
+![image](https://github.com/user-attachments/assets/96bc6ea6-e8d3-406a-ad12-aa35bcfa121a)
+
 
 
 
