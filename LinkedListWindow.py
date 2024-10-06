@@ -51,8 +51,9 @@ class LinkedListWindow:
             while current is not None:
 
                 #draw box
-                window['-LINKEDLISTGRAPH-'].draw_line(point_to=(x-10, 110), point_from=(x-10, 140), color='black', width=3)
-                window['-LINKEDLISTGRAPH-'].draw_line(point_to=(x+10, 110), point_from=(x+10, 140), color='black', width=3)
+                window['-LINKEDLISTGRAPH-'].draw_line(point_to=(x-10, 80), point_from=(x-10, 140), color='black', width=3)
+                window['-LINKEDLISTGRAPH-'].draw_line(point_to=(x+10, 80), point_from=(x+10, 140), color='black', width=3)
+                window['-LINKEDLISTGRAPH-'].draw_line(point_to=(x-10, 80), point_from=(x+10, 80), color='black', width=3)
                 window['-LINKEDLISTGRAPH-'].draw_line(point_to=(x-10, 110), point_from=(x+10, 110), color='black', width=3)
                 window['-LINKEDLISTGRAPH-'].draw_line(point_to=(x-10, 140), point_from=(x+10, 140), color='black', width=3)
 
@@ -61,9 +62,9 @@ class LinkedListWindow:
 
                 #print arrow to next value
                 if current.next is not None:
-                    window['-LINKEDLISTGRAPH-'].draw_line(point_to=(x + 15, 125), point_from=(x + 25, 125), color='black', width=3)
-                    window['-LINKEDLISTGRAPH-'].draw_line(point_to=(x + 20, 135), point_from=(x + 25, 125), color='black', width=3)
-                    window['-LINKEDLISTGRAPH-'].draw_line(point_to=(x + 20, 115), point_from=(x + 25, 125), color='black', width=3)
+                    window['-LINKEDLISTGRAPH-'].draw_line(point_to=(x, 95), point_from=(x + 35, 125), color='black', width=3)
+                    window['-LINKEDLISTGRAPH-'].draw_line(point_to=(x + 20, 120), point_from=(x + 35, 125), color='black', width=3)
+                    window['-LINKEDLISTGRAPH-'].draw_line(point_to=(x + 30, 110), point_from=(x + 35, 125), color='black', width=3)
 
                 x += 45
 
